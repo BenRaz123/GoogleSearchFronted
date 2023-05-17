@@ -1,14 +1,6 @@
 use clap::*;
 use open;
 
-fn filter_letter(character: &mut String) -> String {
-    if character == &" ".to_owned() {
-        return "%20".to_owned();
-    }
-    character.to_owned()
-}
-
-
 fn main() {
 
     let my_arguments = Command::new("google")
